@@ -1,6 +1,9 @@
 {
   "name": "budget-app",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.x"
+  },
   "description": "Budget tracking with offline capability",
   "main": "server.js",
   "scripts": {
