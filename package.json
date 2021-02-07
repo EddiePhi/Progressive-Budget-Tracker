@@ -1,18 +1,14 @@
 {
   "name": "budget-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "Budget tracking with offline capability",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start": "node server.js",
     "lite-server": "lite-server",
-    "start:prod": "npm run build && node server.js",
-    "start:dev": "concurrently \"npm run server\" \"cd client && npm run start\"",
-    "server": "nodemon server.js --ignore client",
-    "build": "cd client && npm run build",
-    "install": "cd client && npm install",
-    "client": "cd client && npm start"
+    "build": "webpack",
+    "prestart": "webpack --watch"
   },
   "repository": {
     "type": "git",

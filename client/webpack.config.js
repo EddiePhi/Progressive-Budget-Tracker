@@ -3,9 +3,7 @@ const path = require('path');
 
 const config = {
   entry: {
-    app: './assets/js/index.js',
-    favorites: './assets/js/favorites.js',
-    topic: './assets/js/topic.js',
+    app: './assets/js/index.js'
   },
   output: {
     path: __dirname + '/dist',
@@ -29,9 +27,9 @@ const config = {
   plugins: [
     new WebpackPwaManifest({
       fingerprints: false,
-      name: 'Newsy app',
-      short_name: 'Newsy',
-      description: 'An application that allows you to view different news articles and save your favorites.',
+      name: 'Progressive Budget App',
+      short_name: 'Prog Budget',
+      description: 'An application that allows you to save budget transactions offline.',
       background_color: '#01579b',
       theme_color: '#ffffff',
       'theme-color': '#ffffff',
