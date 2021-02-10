@@ -62,7 +62,8 @@ function checkDatabase() {
 
         // clear all items in your store
         store.clear();
-      });
+      })
+      .catch(console.log);
     }
   };
 }
