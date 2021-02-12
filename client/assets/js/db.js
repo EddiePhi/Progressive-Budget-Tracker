@@ -1,5 +1,8 @@
 // Reference from Week 17 Act 26
 
+// Create event listener for 
+window.addEventListener("online", checkDatabase);
+
 let db;
 // create a new db request for a "budget" database.
 const request = indexedDB.open("budget", 1);
