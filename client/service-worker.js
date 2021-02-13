@@ -1,10 +1,10 @@
-// Referencing from WK 18 Act 23 Mini Project
+// Referencing from WK 18 Act 23 Mini Project, further assistance form Jim Dhima
 
 const FILES_TO_CACHE = [
     '/',
     '/index.html',
-    'assets/js/index.js',
-    'assets/js/db.js',
+    '/index.js',
+    '/db.js',
     '/assets/css/styles.css',
     '/assets/icons/icon-192x192.png',
     '/assets/icons/icon-512x512.png',
