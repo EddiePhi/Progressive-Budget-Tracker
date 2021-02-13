@@ -7,7 +7,7 @@ if ("serviceWorker" in navigator) {
 let transactions = [];
 let myChart;
 
-fetch("/api/transactions")
+fetch("/api/transaction")
   .then(response => {
     return response.json();
   })
@@ -119,7 +119,7 @@ function sendTransaction(isAdding) {
   populateTotal();
   
   // also send to server
-  fetch("/api/transactions", {
+  fetch("/api/transaction", {
     method: "POST",
     body: JSON.stringify(transaction),
     headers: {
